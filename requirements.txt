@@ -1,0 +1,6 @@
+aiosqlite
+uvicorn
+fastapi
+sqlalchemy
+bcrypt
+email_validator
