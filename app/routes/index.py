@@ -20,7 +20,7 @@ async def getProducts(db: Session = Depends(get_db)):
 @router.get("/products/{productID}")
 async def getProductsById(productID: int, db: Session = Depends(get_db)):
     product = db.query(Product).filter(
-        (Product.productID == productID)
+        (Product._id == productID)
     ).first()
     if not product:
         raise HTTPException(status_code=404, detail="Nie znaleziono produktu")

@@ -17,6 +17,6 @@ class ProductCreate(ProductBase):
     pass
 
 class ProductResponse(ProductBase):
-    productID: int
+    _id: int
     class Config:
         from_attributes = True

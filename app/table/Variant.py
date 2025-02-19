@@ -11,5 +11,5 @@ class Variant(Base):
     color = Column(String)
     size = Column(String)
     quantity = Column(Integer)
-    title = Column(String)
+    #title = Column(String)
     price = Column(Float)
